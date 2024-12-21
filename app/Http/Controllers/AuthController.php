@@ -31,8 +31,7 @@ class AuthController extends Controller
         // get user input
         $username = $request->input('text_username');
         $password = $request->input('text_password');
-
-        echo 'ok';
+ 
     }
 
     public function logout()
