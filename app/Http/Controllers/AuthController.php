@@ -54,7 +54,6 @@ class AuthController extends Controller
         }
 
         // update last login
-
         $user->last_login = date('Y-m-d H:i:s');
         $user->save();
 
@@ -66,7 +65,8 @@ class AuthController extends Controller
             ]
         ]);
 
-        echo "LOGIN COM SUCESSO";
+        // redirect to home
+        return redirect()->to('/');
     }
 
     public function logout()
